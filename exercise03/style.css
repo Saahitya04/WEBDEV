@@ -1,0 +1,48 @@
+:root {
+    --bgcolor: red;
+    --bgcolorhoverhome: orange;
+    --bgcolorhoverabout: blue;
+    --bgcolorhoverserv: green;
+    --bgcolorhovercont: pink;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: flex;
+    background-color: var(--bgcolor);
+}
+ul li{
+    --bgcolor: white;
+    background-color: var(--bgcolor);
+    list-style: none;
+    border: 2px solid yellow;
+    padding: 5px;
+    margin: 2px;
+}
+.home {
+    background-color: var(--bgcolor);
+    
+}
+.home:hover {
+    background-color: var(--bgcolorhoverhome);
+}
+.ab {
+    background-color: var(--bgcolor);
+}   
+.ab:hover {
+    background-color: var(--bgcolorhoverabout);
+}
+.serv {
+    background-color: var(--bgcolor);
+}
+.serv:hover {
+    background-color: var(--bgcolorhoverserv);
+}
+.cont {
+    background-color: var(--bgcolor);
+}  
+.cont:hover {
+    background-color: var(--bgcolorhovercont);
+}
