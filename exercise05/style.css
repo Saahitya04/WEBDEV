@@ -13,7 +13,6 @@ nav {
 .item{
     font-family:"Segoe UI", Tahoma, Verdana, sans-serif;
     font-size: medium;
-    display: inline-block;
     margin: 17px;
     color: rgba(34, 34, 34, 0.783)
 }
