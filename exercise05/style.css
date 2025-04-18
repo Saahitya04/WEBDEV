@@ -1,0 +1,36 @@
+*{
+    margin: 2px;
+    padding: 0;
+}
+
+nav {
+    width: 82vw;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    font-family:"Segoe UI", Tahoma, Verdana, sans-serif;
+    font-size: medium;
+    display: inline-block;
+    margin: 17px;
+    color: rgba(34, 34, 34, 0.783)
+}
+
+.item:hover{
+    color: grey
+}
+
+.logo {
+    flex-grow: 9;
+}
+
+.logo > img {
+    width: 175px;
+}
+
+.icon > img{
+    width:20px;
+}
+
