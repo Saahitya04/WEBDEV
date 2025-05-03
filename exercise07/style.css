@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.surface{
+    position: relative;
+    width: 70vw;
+    height: 60vh;
+    background-color: green;
+}
+
+.ball{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border-radius: 100%;
+    animation: x-direction 5s infinite linear, y-direction 1s infinite alternate ease-out; 
+}
+
+@keyframes x-direction {
+    from{
+        left: 0%
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes y-direction {
+    from{
+        bottom: 0%;
+    }
+    to{
+        bottom: 100%;
+    }
+}
