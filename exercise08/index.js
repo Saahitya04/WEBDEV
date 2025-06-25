@@ -11,27 +11,23 @@
 */
 
 function faultyCalculator(num1, num2) {
-    console.log("Sum of " + num1 + " and " + num2 + " is: " + (num1 - num2));
-    console.log("Product of " + num1 + " and " + num2 + " is: " + (num1 + num2));
-    if(num2 === 0) {
-        console.log(num2, "can not be zero");
-    }
-    else console.log("Difference of " + num1 + " and " + num2 + " is: " + (num1 / num2));
-    console.log("Division of " + num1 + " and " + num2 + "   is: " + (num1 ** num2));
+    alert(`Result of operation is : ${eval(`${num1} ${op[c]} ${num2}`)}`);
 }
 
 function calculator(num1, num2) {
-    console.log("Sum of " + num1 + " and " + num2 + " is: " + (num1+num2));
-    console.log("Product of " + num1 + " and " + num2 + " is: " + (num1*num2));
-    console.log("Difference of " + num1 + " and " + num2 + " is: " + (num1-num2));
-    if(num2 === 0) {
-        console.log(num2, "can not be zero");
-    }
-    else console.log("Division of " + num1 + " and " + num2 + "   is: " + (num1/num2));
+    alert(`Result of operation is : ${eval(`${num1} ${c} ${num2}`)}`);
 }
 
-let num1 = Number(prompt("Enter first number: "));
-let num2 = Number(prompt("Enter second number: "));
+let num1 = prompt("Enter first number: ");
+let c = prompt("Enter operation:");
+let num2 = prompt("Enter second number: ");
 let chance = Math.random();
+
+const op = {
+    "+": "-",
+    "*": "-",
+    "-": "/",
+    "/": "**"
+}
 if(chance < 0.1) faultyCalculator(num1, num2);
 else calculator(num1, num2);
